@@ -1,0 +1,917 @@
+/* =====================================================
+   AVYORA CONTACT PAGE
+   PREMIUM BLACK + GOLD THEME
+===================================================== */
+
+.contact-page {
+    background: #050505;
+    color: #f5f0e7;
+    overflow: hidden;
+}
+
+.contact-page * {
+    box-sizing: border-box;
+}
+
+.contact-page .container {
+    width: min(1180px, 92%);
+    margin: auto;
+}
+
+.section {
+    padding: 110px 0;
+}
+
+.section-kicker {
+    display: inline-block;
+    color: #c9a45c;
+    font-size: 11px;
+    letter-spacing: 4px;
+    font-weight: 700;
+    margin-bottom: 22px;
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.contact-hero {
+    min-height: 92vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:
+        linear-gradient(180deg,
+            rgba(0, 0, 0, 0.35),
+            #050505 95%),
+        url("https://images.unsplash.com/photo-1477587458883-47145ed94245") center/cover no-repeat;
+}
+
+.contact-hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(circle at 50% 45%,
+            rgba(201, 164, 92, 0.15),
+            transparent 35%);
+}
+
+.contact-hero-glow {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    filter: blur(100px);
+    opacity: 0.18;
+}
+
+.glow-one {
+    background: #c9a45c;
+    left: -100px;
+    top: 20%;
+}
+
+.glow-two {
+    background: #8c6b32;
+    right: -100px;
+    bottom: 10%;
+}
+
+.contact-hero-content {
+    position: relative;
+    z-index: 2;
+    width: min(850px, 90%);
+    margin: auto;
+    text-align: center;
+}
+
+.hero-mini-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: #c9a45c;
+    font-size: 9px;
+    letter-spacing: 5px;
+    margin-bottom: 35px;
+}
+
+.hero-mini-line span {
+    width: 45px;
+    height: 1px;
+    background: #c9a45c;
+}
+
+.contact-eyebrow {
+    color: #ddd3c2;
+    font-size: 11px;
+    letter-spacing: 4px;
+}
+
+.contact-hero h1 {
+    margin: 25px 0;
+    font-size: clamp(65px, 9vw, 125px);
+    line-height: 0.9;
+    font-weight: 300;
+    letter-spacing: -5px;
+}
+
+.contact-hero h1 strong {
+    display: block;
+    color: #c9a45c;
+    font-family: Georgia, serif;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.contact-hero p {
+    max-width: 610px;
+    margin: 35px auto 0;
+    color: #b7b1a7;
+    font-size: 16px;
+    line-height: 1.9;
+}
+
+.hero-scroll {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: #817b72;
+    font-size: 9px;
+    letter-spacing: 4px;
+}
+
+.hero-scroll b {
+    color: #c9a45c;
+    font-size: 20px;
+}
+
+
+/* =====================================================
+   INTRO
+===================================================== */
+
+.contact-intro {
+    background: #080808;
+    border-top: 1px solid rgba(201, 164, 92, 0.1);
+    border-bottom: 1px solid rgba(201, 164, 92, 0.1);
+}
+
+.contact-intro-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    align-items: center;
+}
+
+.contact-intro-left h2 {
+    font-size: clamp(42px, 5vw, 70px);
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -2px;
+}
+
+.contact-intro-left h2 span {
+    display: block;
+    color: #c9a45c;
+    font-family: Georgia, serif;
+    font-style: italic;
+}
+
+.contact-intro-right p {
+    color: #aaa49b;
+    line-height: 1.9;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+.intro-line {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: #777168;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+.intro-line span {
+    width: 45px;
+    height: 1px;
+    background: #c9a45c;
+}
+
+
+/* =====================================================
+   BOOKING
+===================================================== */
+
+.contact-booking {
+    background: #050505;
+}
+
+.contact-booking-grid {
+    display: grid;
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 80px;
+    align-items: start;
+}
+
+.contact-side {
+    position: sticky;
+    top: 100px;
+}
+
+.side-number {
+    font-family: Georgia, serif;
+    color: #c9a45c;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.contact-side h2 {
+    font-size: clamp(40px, 5vw, 65px);
+    font-weight: 300;
+    line-height: 0.98;
+    letter-spacing: -2px;
+}
+
+.contact-side h2 span {
+    display: block;
+    color: #c9a45c;
+    font-family: Georgia, serif;
+    font-style: italic;
+}
+
+.contact-side>p {
+    color: #8f8a83;
+    line-height: 1.9;
+    max-width: 480px;
+    margin: 30px 0;
+}
+
+.contact-info-list {
+    border-top: 1px solid #24221f;
+    margin-top: 45px;
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 22px 0;
+    border-bottom: 1px solid #24221f;
+    text-decoration: none;
+    color: inherit;
+    transition: 0.3s ease;
+}
+
+.contact-info-item:hover {
+    padding-left: 10px;
+}
+
+.info-icon {
+    width: 42px;
+    height: 42px;
+    border: 1px solid #4d402b;
+    display: grid;
+    place-items: center;
+    color: #c9a45c;
+    font-family: Georgia, serif;
+}
+
+.contact-info-item small {
+    display: block;
+    color: #706b64;
+    letter-spacing: 2px;
+    font-size: 8px;
+    margin-bottom: 6px;
+}
+
+.contact-info-item strong {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.contact-hours {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.contact-hours div {
+    padding: 18px;
+    background: #0d0d0c;
+    border: 1px solid #1c1a17;
+}
+
+.contact-hours span {
+    display: block;
+    color: #706b64;
+    font-size: 8px;
+    letter-spacing: 2px;
+    margin-bottom: 7px;
+}
+
+.contact-hours strong {
+    font-size: 11px;
+}
+
+
+/* =====================================================
+   FORM CARD
+===================================================== */
+
+.contact-form-card {
+    background: #0b0b0a;
+    border: 1px solid #28241e;
+    padding: 45px;
+    box-shadow:
+        0 30px 100px rgba(0, 0, 0, 0.45);
+}
+
+.form-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-bottom: 1px solid #29251f;
+    padding-bottom: 30px;
+    margin-bottom: 35px;
+}
+
+.form-card-top span {
+    color: #c9a45c;
+    font-size: 9px;
+    letter-spacing: 3px;
+}
+
+.form-card-top h3 {
+    margin-top: 13px;
+    font-size: 32px;
+    font-weight: 300;
+}
+
+.form-card-top h3 strong {
+    color: #c9a45c;
+    font-family: Georgia, serif;
+    font-style: italic;
+    margin-left: 6px;
+}
+
+.form-symbol {
+    color: #c9a45c;
+    font-size: 30px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.form-field {
+    margin-bottom: 24px;
+}
+
+.form-field label {
+    display: block;
+    color: #817b72;
+    font-size: 9px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.form-field input,
+.form-field select,
+.form-field textarea {
+    width: 100%;
+    background: #11110f;
+    border: 1px solid #28251f;
+    color: #eee8dc;
+    padding: 16px 17px;
+    outline: none;
+    font-size: 13px;
+    font-family: inherit;
+    transition: 0.3s ease;
+}
+
+.form-field input::placeholder,
+.form-field textarea::placeholder {
+    color: #55514b;
+}
+
+.form-field input:focus,
+.form-field select:focus,
+.form-field textarea:focus {
+    border-color: #c9a45c;
+    box-shadow: 0 0 0 3px rgba(201, 164, 92, 0.05);
+}
+
+.form-field select {
+    appearance: none;
+    cursor: pointer;
+}
+
+.form-field select option {
+    background: #10100e;
+    color: white;
+}
+
+.form-field textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+.contact-submit {
+    width: 100%;
+    border: none;
+    background: #c9a45c;
+    color: #090806;
+    padding: 18px 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 10px;
+    transition: 0.3s ease;
+}
+
+.contact-submit:hover {
+    background: #e2c27e;
+    padding-left: 28px;
+}
+
+.contact-submit b {
+    font-size: 20px;
+}
+
+.form-security {
+    display: block;
+    text-align: center;
+    margin-top: 18px;
+    color: #57534c;
+    font-size: 9px;
+    letter-spacing: 1px;
+}
+
+
+/* SUCCESS */
+
+.success-message {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    background: rgba(201, 164, 92, 0.08);
+    border: 1px solid rgba(201, 164, 92, 0.25);
+    padding: 18px;
+    margin-bottom: 25px;
+}
+
+.success-icon {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background: #c9a45c;
+    color: #080706;
+    display: grid;
+    place-items: center;
+    font-weight: bold;
+}
+
+.success-message strong {
+    color: #d7bc85;
+    font-size: 13px;
+}
+
+.success-message p {
+    margin-top: 4px;
+    color: #8e887e;
+    font-size: 11px;
+}
+
+
+/* =====================================================
+   BENEFITS
+===================================================== */
+
+.contact-benefits {
+    background: #090908;
+    border-top: 1px solid #1e1c18;
+}
+
+.benefits-header {
+    display: grid;
+    grid-template-columns: 1fr 0.7fr;
+    gap: 80px;
+    align-items: end;
+    margin-bottom: 60px;
+}
+
+.benefits-header h2 {
+    font-size: clamp(40px, 5vw, 65px);
+    line-height: 1;
+    font-weight: 300;
+}
+
+.benefits-header h2 span {
+    display: block;
+    color: #c9a45c;
+    font-family: Georgia, serif;
+    font-style: italic;
+}
+
+.benefits-header>p {
+    color: #88827a;
+    line-height: 1.8;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    border-top: 1px solid #29261f;
+    border-left: 1px solid #29261f;
+}
+
+.benefit-card {
+    min-height: 320px;
+    padding: 30px;
+    border-right: 1px solid #29261f;
+    border-bottom: 1px solid #29261f;
+    position: relative;
+    transition: 0.4s ease;
+}
+
+.benefit-card:hover {
+    background: #10100e;
+    transform: translateY(-6px);
+}
+
+.benefit-card>span {
+    color: #c9a45c;
+    font-family: Georgia, serif;
+    font-size: 13px;
+}
+
+.benefit-icon {
+    margin-top: 60px;
+    font-size: 30px;
+    color: #c9a45c;
+}
+
+.benefit-card h3 {
+    margin-top: 25px;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.benefit-card p {
+    margin-top: 15px;
+    color: #77726b;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   OFFICE
+===================================================== */
+
+.contact-office {
+    min-height: 650px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+
+.office-image {
+    position: absolute;
+    inset: 0;
+    background:
+        url("https://images.unsplash.com/photo-1599661046289-e31897846e41") center/cover no-repeat;
+    transform: scale(1.03);
+}
+
+.office-overlay {
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(90deg,
+            rgba(0, 0, 0, 0.94),
+            rgba(0, 0, 0, 0.55),
+            rgba(0, 0, 0, 0.2));
+}
+
+.office-content {
+    position: relative;
+    z-index: 2;
+    max-width: 560px;
+}
+
+.office-content>span {
+    color: #c9a45c;
+    letter-spacing: 3px;
+    font-size: 10px;
+}
+
+.office-content h2 {
+    font-size: clamp(50px, 6vw, 80px);
+    font-weight: 300;
+    line-height: 0.95;
+    margin: 25px 0;
+}
+
+.office-content h2 strong {
+    display: block;
+    color: #c9a45c;
+    font-family: Georgia, serif;
+    font-style: italic;
+}
+
+.office-content>p {
+    color: #aaa49b;
+    line-height: 1.9;
+    max-width: 500px;
+}
+
+.office-location {
+    margin: 35px 0;
+    padding-left: 20px;
+    border-left: 1px solid #c9a45c;
+}
+
+.office-location small {
+    display: block;
+    color: #c9a45c;
+    letter-spacing: 3px;
+    font-size: 9px;
+}
+
+.office-location strong {
+    display: block;
+    margin: 8px 0;
+    font-size: 17px;
+}
+
+.office-location span {
+    color: #777168;
+    font-size: 9px;
+    letter-spacing: 2px;
+}
+
+.office-btn {
+    display: inline-flex;
+    gap: 20px;
+    padding: 15px 25px;
+    border: 1px solid #c9a45c;
+    color: #c9a45c;
+    text-decoration: none;
+    font-size: 10px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.office-btn:hover {
+    background: #c9a45c;
+    color: #080706;
+}
+
+
+/* =====================================================
+   FINAL CTA
+===================================================== */
+
+.contact-final {
+    position: relative;
+    padding: 140px 0;
+    background: #050505;
+    text-align: center;
+    overflow: hidden;
+}
+
+.final-glow {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: #c9a45c;
+    opacity: 0.08;
+    filter: blur(150px);
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.contact-final-content {
+    position: relative;
+    z-index: 2;
+}
+
+.contact-final-content>span {
+    color: #c9a45c;
+    letter-spacing: 4px;
+    font-size: 10px;
+}
+
+.contact-final h2 {
+    font-size: clamp(55px, 8vw, 100px);
+    line-height: 0.9;
+    font-weight: 300;
+    margin: 25px 0;
+}
+
+.contact-final h2 strong {
+    display: block;
+    color: #c9a45c;
+    font-family: Georgia, serif;
+    font-style: italic;
+}
+
+.contact-final p {
+    max-width: 550px;
+    margin: 30px auto;
+    color: #89837b;
+    line-height: 1.8;
+}
+
+.final-actions {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+.gold-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 30px;
+    padding: 17px 28px;
+    background: #c9a45c;
+    color: #090806;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.gold-btn:hover {
+    background: #e1c17d;
+    transform: translateY(-3px);
+}
+
+.gold-btn span {
+    font-size: 18px;
+}
+
+.final-phone {
+    color: #777168;
+    font-size: 9px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    border-bottom: 1px solid #49443d;
+    padding-bottom: 5px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+===================================================== */
+
+@media (max-width: 1000px) {
+
+    .contact-booking-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-side {
+        position: static;
+    }
+
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact-intro-grid,
+    .benefits-header {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .section {
+        padding: 75px 0;
+    }
+
+    .contact-hero {
+        min-height: 80vh;
+    }
+
+    .contact-hero h1 {
+        font-size: 65px;
+        letter-spacing: -3px;
+    }
+
+    .contact-hero p {
+        font-size: 13px;
+    }
+
+    .contact-intro-left h2,
+    .contact-side h2 {
+        font-size: 45px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .contact-form-card {
+        padding: 25px 20px;
+    }
+
+    .contact-hours {
+        grid-template-columns: 1fr;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .benefit-card {
+        min-height: auto;
+    }
+
+    .benefit-icon {
+        margin-top: 35px;
+    }
+
+    .contact-office {
+        min-height: 600px;
+    }
+
+    .office-overlay {
+        background:
+            linear-gradient(90deg,
+                rgba(0, 0, 0, 0.93),
+                rgba(0, 0, 0, 0.65));
+    }
+
+    .office-content h2 {
+        font-size: 55px;
+    }
+
+    .contact-final {
+        padding: 100px 0;
+    }
+
+    .contact-final h2 {
+        font-size: 60px;
+    }
+
+    .final-actions {
+        flex-direction: column;
+    }
+
+    .hero-mini-line {
+        letter-spacing: 3px;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .contact-hero h1 {
+        font-size: 52px;
+    }
+
+    .contact-eyebrow {
+        font-size: 8px;
+        letter-spacing: 2px;
+    }
+
+    .contact-side h2 {
+        font-size: 40px;
+    }
+
+    .form-card-top h3 {
+        font-size: 26px;
+    }
+
+    .contact-final h2 {
+        font-size: 48px;
+    }
+
+}

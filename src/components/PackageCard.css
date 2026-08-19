@@ -1,0 +1,525 @@
+/* =========================================
+   AVYORA PACKAGE CARD
+========================================= */
+
+.package-card {
+  position: relative;
+
+  background: #101010;
+
+  border: 1px solid
+    rgba(255, 255, 255, 0.07);
+
+  overflow: hidden;
+
+  transition:
+    transform 0.5s ease,
+    border-color 0.5s ease,
+    box-shadow 0.5s ease;
+}
+
+.package-card:hover {
+  transform: translateY(-8px);
+
+  border-color:
+    rgba(201, 162, 39, 0.45);
+
+  box-shadow:
+    0 25px 70px
+    rgba(0, 0, 0, 0.55);
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.package-image {
+  position: relative;
+
+  height: 330px;
+
+  overflow: hidden;
+
+  background: #151515;
+}
+
+.package-image img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.8s
+    cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.package-card:hover
+.package-image img {
+  transform: scale(1.09);
+}
+
+
+/* =========================================
+   IMAGE OVERLAY
+========================================= */
+
+.package-image-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.25),
+      transparent 40%,
+      rgba(0, 0, 0, 0.88)
+    );
+
+  z-index: 1;
+}
+
+
+/* =========================================
+   PACKAGE NUMBER
+========================================= */
+
+.package-number {
+  position: absolute;
+
+  top: 18px;
+
+  left: 18px;
+
+  z-index: 3;
+
+  color: rgba(255, 255, 255, 0.75);
+
+  font-family: var(--heading-font);
+
+  font-size: 21px;
+
+  font-weight: 500;
+}
+
+
+/* =========================================
+   TAG
+========================================= */
+
+.package-tag {
+  position: absolute;
+
+  top: 18px;
+
+  right: 18px;
+
+  z-index: 3;
+
+  padding: 7px 10px;
+
+  background: var(--gold);
+
+  color: #080808;
+
+  font-size: 7px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+}
+
+
+/* =========================================
+   DURATION
+========================================= */
+
+.package-duration {
+  position: absolute;
+
+  right: 18px;
+
+  bottom: 55px;
+
+  z-index: 3;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: flex-end;
+
+  gap: 3px;
+}
+
+.package-duration span {
+  color: rgba(255, 255, 255, 0.55);
+
+  font-size: 6px;
+
+  letter-spacing: 1.5px;
+}
+
+.package-duration strong {
+  color: var(--white);
+
+  font-family: var(--heading-font);
+
+  font-size: 19px;
+
+  font-weight: 500;
+}
+
+
+/* =========================================
+   IMAGE LOCATION
+========================================= */
+
+.package-image-location {
+  position: absolute;
+
+  left: 18px;
+
+  bottom: 18px;
+
+  z-index: 3;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  color: rgba(255, 255, 255, 0.85);
+
+  font-size: 7px;
+
+  font-weight: 600;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+}
+
+.location-pin {
+  color: var(--gold);
+
+  font-size: 6px;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.package-content {
+  padding: 25px 24px 23px;
+}
+
+
+/* =========================================
+   TOP
+========================================= */
+
+.package-top {
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 12px;
+}
+
+.package-location {
+  color: var(--gold);
+
+  font-size: 7px;
+
+  font-weight: 600;
+
+  letter-spacing: 1.8px;
+}
+
+.package-line {
+  flex: 1;
+
+  height: 1px;
+
+  background:
+    rgba(201, 162, 39, 0.2);
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.package-content h3 {
+  color: var(--white);
+
+  font-family: var(--heading-font);
+
+  font-size: 34px;
+
+  font-weight: 500;
+
+  line-height: 1;
+
+  margin: 0;
+
+  transition:
+    color 0.3s ease;
+}
+
+.package-card:hover
+.package-content h3 {
+  color: var(--gold-light);
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.package-content > p {
+  margin-top: 14px;
+
+  color: #77736c;
+
+  font-size: 9px;
+
+  line-height: 1.8;
+
+  min-height: 48px;
+}
+
+
+/* =========================================
+   BOTTOM
+========================================= */
+
+.package-bottom {
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: space-between;
+
+  gap: 15px;
+
+  margin-top: 23px;
+
+  padding-top: 18px;
+
+  border-top: 1px solid
+    rgba(255, 255, 255, 0.07);
+}
+
+
+/* =========================================
+   PRICE
+========================================= */
+
+.package-price {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 5px;
+}
+
+.package-price small {
+  color: #5d5953;
+
+  font-size: 6px;
+
+  font-weight: 600;
+
+  letter-spacing: 1.5px;
+}
+
+.package-price div {
+  display: flex;
+
+  align-items: baseline;
+
+  gap: 4px;
+}
+
+.package-price strong {
+  color: var(--white);
+
+  font-family: var(--heading-font);
+
+  font-size: 25px;
+
+  font-weight: 500;
+}
+
+.package-price span {
+  color: #65615b;
+
+  font-size: 7px;
+}
+
+
+/* =========================================
+   VIEW TOUR
+========================================= */
+
+.package-link {
+  position: relative;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  color: var(--gold);
+
+  font-size: 7px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.2px;
+
+  text-transform: uppercase;
+
+  white-space: nowrap;
+}
+
+.package-link::after {
+  content: "";
+
+  position: absolute;
+
+  left: 0;
+
+  bottom: -7px;
+
+  width: 0;
+
+  height: 1px;
+
+  background: var(--gold);
+
+  transition:
+    width 0.3s ease;
+}
+
+.package-link strong {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 28px;
+
+  height: 28px;
+
+  border: 1px solid
+    rgba(201, 162, 39, 0.4);
+
+  font-size: 15px;
+
+  font-weight: 400;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.package-link:hover::after {
+  width: 62px;
+}
+
+.package-link:hover strong {
+  background: var(--gold);
+
+  color: #080808;
+
+  transform:
+    translate(3px, -3px);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .package-image {
+    height: 300px;
+  }
+
+  .package-content h3 {
+    font-size: 30px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .package-image {
+    height: 280px;
+  }
+
+  .package-content {
+    padding: 22px 20px 20px;
+  }
+
+  .package-content h3 {
+    font-size: 31px;
+  }
+
+  .package-content > p {
+    font-size: 9px;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+  .package-image {
+    height: 250px;
+  }
+
+  .package-content h3 {
+    font-size: 28px;
+  }
+
+  .package-bottom {
+    align-items: flex-end;
+  }
+
+  .package-price strong {
+    font-size: 22px;
+  }
+
+  .package-link {
+    gap: 7px;
+
+    font-size: 6px;
+  }
+
+}

@@ -1,0 +1,506 @@
+/* =========================================
+   AVYORA DESTINATION CARD
+========================================= */
+
+.destination-card {
+  position: relative;
+
+  width: 100%;
+
+  overflow: hidden;
+
+  background: #0c0c0c;
+
+  border: 1px solid
+    rgba(255, 255, 255, 0.07);
+
+  transition:
+    transform 0.5s ease,
+    border-color 0.5s ease,
+    box-shadow 0.5s ease;
+}
+
+.destination-card:hover {
+  transform: translateY(-8px);
+
+  border-color:
+    rgba(201, 162, 39, 0.5);
+
+  box-shadow:
+    0 30px 70px
+    rgba(0, 0, 0, 0.6);
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.destination-image {
+  position: relative;
+
+  width: 100%;
+
+  height: 480px;
+
+  overflow: hidden;
+}
+
+.destination-image img {
+  width: 100%;
+
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+
+  transition:
+    transform 1s
+    cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.destination-card:hover
+.destination-image img {
+  transform: scale(1.1);
+}
+
+
+/* =========================================
+   OVERLAY
+========================================= */
+
+.destination-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  z-index: 1;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.15) 0%,
+      rgba(0, 0, 0, 0.05) 30%,
+      rgba(0, 0, 0, 0.42) 55%,
+      rgba(0, 0, 0, 0.94) 100%
+    );
+
+  transition:
+    background 0.5s ease;
+}
+
+.destination-card:hover
+.destination-overlay {
+  background:
+    linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.18),
+      rgba(0, 0, 0, 0.08) 30%,
+      rgba(0, 0, 0, 0.52) 58%,
+      rgba(0, 0, 0, 0.96) 100%
+    );
+}
+
+
+/* =========================================
+   NUMBER
+========================================= */
+
+.destination-number {
+  position: absolute;
+
+  top: 22px;
+
+  left: 22px;
+
+  z-index: 3;
+
+  color: rgba(255, 255, 255, 0.75);
+
+  font-family: var(--heading-font);
+
+  font-size: 23px;
+
+  font-weight: 500;
+
+  transition:
+    color 0.3s ease;
+}
+
+.destination-card:hover
+.destination-number {
+  color: var(--gold);
+}
+
+
+/* =========================================
+   LOCATION
+========================================= */
+
+.destination-location {
+  position: absolute;
+
+  top: 25px;
+
+  right: 22px;
+
+  z-index: 3;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 7px;
+
+  color: rgba(255, 255, 255, 0.65);
+
+  font-size: 7px;
+
+  font-weight: 600;
+
+  letter-spacing: 2px;
+}
+
+.location-icon {
+  color: var(--gold);
+
+  font-size: 5px;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.destination-content {
+  position: absolute;
+
+  left: 0;
+
+  bottom: 0;
+
+  width: 100%;
+
+  padding: 30px;
+
+  z-index: 3;
+}
+
+
+/* =========================================
+   LABEL
+========================================= */
+
+.destination-label {
+  display: block;
+
+  color: var(--gold);
+
+  font-size: 7px;
+
+  font-weight: 700;
+
+  letter-spacing: 2.5px;
+
+  margin-bottom: 9px;
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.destination-content h3 {
+  margin: 0;
+
+  color: var(--white);
+
+  font-family: var(--heading-font);
+
+  font-size: 50px;
+
+  font-weight: 500;
+
+  line-height: 0.95;
+
+  letter-spacing: -1px;
+
+  transition:
+    color 0.35s ease,
+    transform 0.35s ease;
+}
+
+.destination-card:hover
+.destination-content h3 {
+  color: var(--gold-light);
+
+  transform:
+    translateX(3px);
+}
+
+
+/* =========================================
+   TITLE LINE
+========================================= */
+
+.destination-title-line {
+  width: 35px;
+
+  height: 1px;
+
+  margin-top: 14px;
+
+  background: var(--gold);
+
+  transition:
+    width 0.4s ease;
+}
+
+.destination-card:hover
+.destination-title-line {
+  width: 75px;
+}
+
+
+/* =========================================
+   DESCRIPTION
+========================================= */
+
+.destination-content p {
+  max-width: 430px;
+
+  margin: 15px 0 0;
+
+  color: #a09a91;
+
+  font-size: 9px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   PLACES
+========================================= */
+
+.destination-places {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 7px;
+
+  margin-top: 17px;
+}
+
+.destination-places span {
+  padding: 6px 9px;
+
+  color: #aaa49a;
+
+  background:
+    rgba(255, 255, 255, 0.06);
+
+  border: 1px solid
+    rgba(255, 255, 255, 0.1);
+
+  font-size: 6px;
+
+  font-weight: 600;
+
+  letter-spacing: 1px;
+
+  text-transform: uppercase;
+
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.destination-card:hover
+.destination-places span {
+  border-color:
+    rgba(201, 162, 39, 0.22);
+
+  color: #d2cbc0;
+}
+
+
+/* =========================================
+   EXPLORE
+========================================= */
+
+.destination-explore {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 15px;
+
+  margin-top: 22px;
+
+  color: var(--gold);
+
+  font-size: 7px;
+
+  font-weight: 700;
+
+  letter-spacing: 1.6px;
+
+  text-transform: uppercase;
+}
+
+.destination-explore strong {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  width: 32px;
+
+  height: 32px;
+
+  border: 1px solid
+    rgba(201, 162, 39, 0.45);
+
+  font-size: 16px;
+
+  font-weight: 400;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.destination-explore:hover strong {
+  background: var(--gold);
+
+  color: #080808;
+
+  transform:
+    translate(4px, -4px);
+}
+
+
+/* =========================================
+   BOTTOM DECORATIVE LINE
+========================================= */
+
+.destination-bottom-line {
+  position: absolute;
+
+  left: 30px;
+
+  bottom: 17px;
+
+  width: calc(100% - 60px);
+
+  height: 1px;
+
+  z-index: 4;
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--gold),
+      rgba(201, 162, 39, 0.1),
+      transparent
+    );
+
+  opacity: 0.55;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+  .destination-image {
+    height: 430px;
+  }
+
+  .destination-content {
+    padding: 25px;
+  }
+
+  .destination-content h3 {
+    font-size: 43px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 650px) {
+
+  .destination-image {
+    height: 450px;
+  }
+
+  .destination-content {
+    padding: 22px;
+  }
+
+  .destination-number {
+    left: 18px;
+
+    top: 18px;
+  }
+
+  .destination-location {
+    right: 18px;
+
+    top: 20px;
+  }
+
+  .destination-content h3 {
+    font-size: 43px;
+  }
+
+  .destination-content p {
+    font-size: 9px;
+
+    max-width: 95%;
+  }
+
+  .destination-bottom-line {
+    left: 22px;
+
+    width: calc(100% - 44px);
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+  .destination-image {
+    height: 420px;
+  }
+
+  .destination-content h3 {
+    font-size: 38px;
+  }
+
+  .destination-places {
+    gap: 5px;
+  }
+
+  .destination-places span {
+    padding: 5px 7px;
+  }
+
+}

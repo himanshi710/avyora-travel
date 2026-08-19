@@ -1,0 +1,632 @@
+/* =========================================
+   AVYORA EXPERIENCES
+   PREMIUM BLACK / GOLD THEME
+========================================= */
+
+.experiences-page {
+  background: #080808;
+  color: #f5f1e8;
+  overflow: hidden;
+}
+
+.experiences-page .container {
+  width: min(1180px, 92%);
+  margin: auto;
+}
+
+
+/* =========================================
+   HERO
+========================================= */
+
+.experiences-hero {
+  min-height: 92vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(4, 4, 4, 0.96) 0%,
+      rgba(4, 4, 4, 0.78) 45%,
+      rgba(4, 4, 4, 0.28) 100%
+    ),
+    url("https://images.unsplash.com/photo-1500534623283-312aade485b7")
+    center/cover no-repeat;
+}
+
+.experiences-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      to bottom,
+      transparent 70%,
+      #080808 100%
+    );
+  pointer-events: none;
+}
+
+.experiences-hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      circle at 75% 40%,
+      rgba(205, 161, 70, 0.12),
+      transparent 30%
+    );
+}
+
+.experiences-hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 760px;
+  padding: 130px 0 100px;
+}
+
+.hero-mini-line {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: #d5ad5a;
+  font-size: 11px;
+  letter-spacing: 4px;
+  margin-bottom: 28px;
+}
+
+.hero-mini-line span {
+  width: 35px;
+  height: 1px;
+  background: #cda14a;
+}
+
+.experiences-hero h1 {
+  margin: 0;
+  font-family: Georgia, serif;
+  font-size: clamp(55px, 8vw, 105px);
+  line-height: 0.92;
+  font-weight: 400;
+  letter-spacing: -4px;
+}
+
+.experiences-hero h1 strong {
+  display: block;
+  color: #d5ad5a;
+  font-style: italic;
+  font-weight: 400;
+  margin-left: 80px;
+}
+
+.experiences-hero p {
+  max-width: 610px;
+  color: #aaa;
+  font-size: 17px;
+  line-height: 1.9;
+  margin: 38px 0;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.gold-btn,
+.dark-outline-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 52px;
+  padding: 0 28px;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.gold-btn {
+  background: #cda14a;
+  color: #090909;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.gold-btn:hover {
+  background: #f0cf80;
+  transform: translateY(-3px);
+}
+
+.dark-outline-btn {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #fff;
+}
+
+.dark-outline-btn:hover {
+  border-color: #cda14a;
+  color: #d5ad5a;
+}
+
+.hero-side-text {
+  position: absolute;
+  z-index: 3;
+  right: 0;
+  bottom: 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #777;
+  font-size: 9px;
+  letter-spacing: 3px;
+  writing-mode: vertical-rl;
+}
+
+
+/* =========================================
+   INTRO
+========================================= */
+
+.experiences-intro {
+  background: #080808;
+  padding: 110px 0 80px;
+}
+
+.experiences-intro-top {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  align-items: end;
+}
+
+.experience-label {
+  display: block;
+  color: #cda14a;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 3px;
+  margin-bottom: 20px;
+}
+
+.experience-intro-title h2 {
+  font-family: Georgia, serif;
+  font-weight: 400;
+  font-size: clamp(40px, 5vw, 65px);
+  line-height: 1;
+  margin: 0;
+}
+
+.experience-intro-title h2 span {
+  display: block;
+  color: #d5ad5a;
+  font-style: italic;
+}
+
+.experience-intro-text {
+  border-left: 1px solid #2b2b2b;
+  padding-left: 35px;
+}
+
+.experience-intro-text p {
+  color: #999;
+  line-height: 1.9;
+  font-size: 15px;
+  margin: 0 0 18px;
+}
+
+.experience-stats {
+  margin-top: 90px;
+  border-top: 1px solid #242424;
+  border-bottom: 1px solid #242424;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.experience-stats div {
+  padding: 30px;
+  border-right: 1px solid #242424;
+}
+
+.experience-stats div:last-child {
+  border-right: 0;
+}
+
+.experience-stats strong {
+  display: block;
+  font-family: Georgia, serif;
+  font-size: 38px;
+  color: #d5ad5a;
+  font-weight: 400;
+}
+
+.experience-stats span {
+  display: block;
+  margin-top: 7px;
+  color: #777;
+  font-size: 11px;
+  letter-spacing: 1px;
+}
+
+
+/* =========================================
+   FILTER
+========================================= */
+
+.experience-filter-section {
+  padding: 80px 0 45px;
+  background: #0c0c0c;
+  border-top: 1px solid #181818;
+}
+
+.experience-filter-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 50px;
+  margin-bottom: 45px;
+}
+
+.experience-filter-heading > div span {
+  color: #777;
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+
+.experience-filter-heading h2 {
+  font-family: Georgia, serif;
+  font-size: 45px;
+  font-weight: 400;
+  margin: 12px 0 0;
+}
+
+.experience-filter-heading h2 em {
+  color: #d5ad5a;
+  font-style: italic;
+}
+
+.experience-filter-heading p {
+  max-width: 420px;
+  color: #777;
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+.experience-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.experience-tabs button {
+  background: transparent;
+  border: 1px solid #292929;
+  color: #777;
+  padding: 13px 22px;
+  font-size: 10px;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.experience-tabs button:hover {
+  border-color: #cda14a;
+  color: #d5ad5a;
+}
+
+.experience-tabs button.active {
+  background: #cda14a;
+  border-color: #cda14a;
+  color: #080808;
+}
+
+
+/* =========================================
+   EXPERIENCE LIST
+========================================= */
+
+.experiences-list {
+  background: #0c0c0c;
+  padding: 20px 0 110px;
+}
+
+.experience-results {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  color: #777;
+  font-size: 9px;
+  letter-spacing: 2px;
+  margin-bottom: 30px;
+}
+
+.result-line {
+  width: 50px;
+  height: 1px;
+  background: #cda14a;
+}
+
+.experiences-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+
+/* =========================================
+   FEATURED EXPERIENCE
+========================================= */
+
+.featured-experience {
+  position: relative;
+  background: #080808;
+  padding: 120px 0;
+}
+
+.featured-experience-bg {
+  position: absolute;
+  width: 45%;
+  height: 100%;
+  right: 0;
+  top: 0;
+  background:
+    radial-gradient(
+      circle,
+      rgba(205, 161, 74, 0.09),
+      transparent 60%
+    );
+}
+
+.featured-experience-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 90px;
+  align-items: center;
+}
+
+.featured-experience-image {
+  position: relative;
+  height: 600px;
+  overflow: hidden;
+}
+
+.featured-experience-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.72);
+  transition: 0.7s;
+}
+
+.featured-experience-image:hover img {
+  transform: scale(1.05);
+}
+
+.featured-image-number {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+  font-family: Georgia, serif;
+  font-size: 55px;
+  color: #fff;
+}
+
+.featured-image-caption {
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  font-size: 10px;
+  letter-spacing: 3px;
+}
+
+.featured-image-caption strong {
+  display: block;
+  color: #d5ad5a;
+  font-size: 18px;
+  margin-top: 5px;
+}
+
+.featured-experience-content h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(42px, 5vw, 65px);
+  font-weight: 400;
+  line-height: 1;
+  margin: 0 0 30px;
+}
+
+.featured-experience-content h2 span {
+  display: block;
+  color: #d5ad5a;
+  font-style: italic;
+}
+
+.featured-experience-content > p {
+  color: #999;
+  line-height: 1.9;
+  font-size: 15px;
+  max-width: 520px;
+}
+
+.featured-points {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin: 35px 0;
+}
+
+.featured-points div {
+  border-top: 1px solid #292929;
+  padding-top: 14px;
+}
+
+.featured-points span {
+  color: #cda14a;
+  font-size: 10px;
+  margin-right: 12px;
+}
+
+.featured-points strong {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+
+/* =========================================
+   CTA
+========================================= */
+
+.experiences-cta {
+  position: relative;
+  padding: 130px 0;
+  background:
+    linear-gradient(
+      rgba(5, 5, 5, 0.88),
+      rgba(5, 5, 5, 0.94)
+    ),
+    url("https://images.unsplash.com/photo-1477587458883-47145ed94245")
+    center/cover no-repeat;
+  text-align: center;
+}
+
+.experiences-cta-pattern {
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(
+      rgba(255,255,255,0.025) 1px,
+      transparent 1px
+    ),
+    linear-gradient(
+      90deg,
+      rgba(255,255,255,0.025) 1px,
+      transparent 1px
+    );
+  background-size: 50px 50px;
+}
+
+.experiences-cta-content {
+  position: relative;
+  z-index: 2;
+}
+
+.experiences-cta-content > span {
+  color: #cda14a;
+  font-size: 10px;
+  letter-spacing: 4px;
+}
+
+.experiences-cta h2 {
+  font-family: Georgia, serif;
+  font-size: clamp(45px, 6vw, 75px);
+  font-weight: 400;
+  line-height: 1;
+  margin: 22px 0;
+}
+
+.experiences-cta h2 strong {
+  display: block;
+  color: #d5ad5a;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.experiences-cta p {
+  max-width: 580px;
+  margin: 0 auto 35px;
+  color: #999;
+  line-height: 1.8;
+}
+
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 900px) {
+
+  .experiences-intro-top,
+  .featured-experience-grid {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .experiences-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .experience-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .experience-stats div:nth-child(2) {
+    border-right: 0;
+  }
+
+  .experience-filter-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .featured-experience-image {
+    height: 450px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+  .experiences-hero {
+    min-height: 800px;
+  }
+
+  .experiences-hero h1 {
+    font-size: 58px;
+  }
+
+  .experiences-hero h1 strong {
+    margin-left: 20px;
+  }
+
+  .hero-side-text {
+    display: none;
+  }
+
+  .experiences-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .experience-stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .experience-stats div {
+    padding: 20px 12px;
+  }
+
+  .experience-stats strong {
+    font-size: 28px;
+  }
+
+  .experience-filter-heading h2 {
+    font-size: 36px;
+  }
+
+  .experience-tabs {
+    gap: 6px;
+  }
+
+  .experience-tabs button {
+    padding: 11px 14px;
+  }
+
+  .featured-points {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-experience-image {
+    height: 380px;
+  }
+
+  .experiences-cta {
+    padding: 100px 0;
+  }
+}

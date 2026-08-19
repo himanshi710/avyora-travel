@@ -1,0 +1,640 @@
+/* =========================================
+   AVYORA TRAVELS FOOTER
+========================================= */
+
+.footer {
+  position: relative;
+
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(201, 162, 39, 0.07),
+      transparent 28%
+    ),
+    radial-gradient(
+      circle at 85% 70%,
+      rgba(201, 162, 39, 0.04),
+      transparent 30%
+    ),
+    #080808;
+
+  color: var(--white);
+
+  overflow: hidden;
+}
+
+
+/* =========================================
+   GOLD TOP LINE
+========================================= */
+
+.footer-gold-line {
+  width: 100%;
+
+  height: 1px;
+
+  background:
+    linear-gradient(
+      90deg,
+      transparent,
+      var(--gold),
+      transparent
+    );
+
+  opacity: 0.7;
+}
+
+
+/* =========================================
+   MAIN FOOTER
+========================================= */
+
+.footer-main {
+  position: relative;
+
+  padding: 90px 0 45px;
+
+  z-index: 2;
+}
+
+.footer-container {
+  width: min(1200px, calc(100% - 70px));
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns:
+    1.5fr
+    0.75fr
+    0.95fr
+    1fr;
+
+  gap: 55px;
+}
+
+
+/* =========================================
+   BRAND
+========================================= */
+
+.footer-brand {
+  max-width: 380px;
+}
+
+
+/* Logo */
+
+.footer-logo {
+  display: inline-flex;
+
+  flex-direction: column;
+
+  line-height: 1;
+
+  position: relative;
+}
+
+.footer-logo-main {
+  color: var(--white);
+
+  font-family: var(--heading-font);
+
+  font-size: 53px;
+
+  font-weight: 600;
+
+  letter-spacing: 3px;
+}
+
+.footer-logo-sub {
+  color: var(--gold);
+
+  font-size: 8px;
+
+  font-weight: 700;
+
+  letter-spacing: 7px;
+
+  margin-top: 7px;
+
+  text-align: right;
+
+  padding-right: 4px;
+}
+
+
+/* Decorative logo line */
+
+.footer-logo::after {
+  content: "";
+
+  position: absolute;
+
+  width: 45px;
+
+  height: 1px;
+
+  background: var(--gold);
+
+  left: 0;
+
+  bottom: -12px;
+}
+
+
+/* Tagline */
+
+.footer-tagline {
+  margin-top: 32px;
+
+  color: var(--gold);
+
+  font-size: 7px;
+
+  font-weight: 600;
+
+  letter-spacing: 2.5px;
+}
+
+
+/* Description */
+
+.footer-brand > p {
+  margin-top: 18px;
+
+  color: #88847d;
+
+  font-size: 11px;
+
+  line-height: 1.9;
+
+  max-width: 350px;
+}
+
+
+/* =========================================
+   SOCIAL
+========================================= */
+
+.footer-socials {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 8px;
+
+  margin-top: 28px;
+}
+
+.footer-socials a {
+  display: flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  padding: 8px 11px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  color: #8f8b84;
+
+  font-size: 8px;
+
+  transition:
+    color 0.3s ease,
+    border-color 0.3s ease,
+    background 0.3s ease;
+}
+
+.footer-socials a span {
+  color: var(--gold);
+
+  font-size: 8px;
+
+  font-weight: 700;
+}
+
+.footer-socials a:hover {
+  color: var(--gold);
+
+  border-color: rgba(201, 162, 39, 0.5);
+
+  background: rgba(201, 162, 39, 0.05);
+}
+
+
+/* =========================================
+   FOOTER COLUMNS
+========================================= */
+
+.footer-column {
+  position: relative;
+}
+
+.footer-column-number {
+  color: var(--gold);
+
+  font-family: var(--heading-font);
+
+  font-size: 18px;
+
+  opacity: 0.7;
+
+  margin-bottom: 5px;
+}
+
+.footer-column h3 {
+  color: var(--white);
+
+  font-family: var(--heading-font);
+
+  font-size: 24px;
+
+  font-weight: 500;
+
+  margin-bottom: 22px;
+}
+
+
+/* =========================================
+   LINKS
+========================================= */
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column li {
+  margin-bottom: 13px;
+}
+
+.footer-column li a {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 8px;
+
+  color: #77736d;
+
+  font-size: 10px;
+
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.footer-column li a span {
+  color: var(--gold);
+
+  opacity: 0;
+
+  transform: translateX(-7px);
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.footer-column li a:hover {
+  color: var(--white);
+
+  transform: translateX(3px);
+}
+
+.footer-column li a:hover span {
+  opacity: 1;
+
+  transform: translateX(0);
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.contact-item {
+  margin-bottom: 20px;
+}
+
+.contact-item > span {
+  display: block;
+
+  color: #55524d;
+
+  font-size: 7px;
+
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 6px;
+}
+
+.contact-item a {
+  color: #a9a49c;
+
+  font-size: 10px;
+
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: var(--gold);
+}
+
+.contact-item p {
+  color: #88847d;
+
+  font-size: 10px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================================
+   CONTACT BUTTON
+========================================= */
+
+.footer-contact-btn {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  width: 100%;
+
+  max-width: 190px;
+
+  margin-top: 28px;
+
+  padding: 12px 15px;
+
+  border: 1px solid rgba(201, 162, 39, 0.4);
+
+  color: var(--gold);
+
+  font-size: 8px;
+
+  font-weight: 600;
+
+  letter-spacing: 1px;
+
+  transition:
+    background 0.3s ease,
+    color 0.3s ease,
+    border-color 0.3s ease;
+}
+
+.footer-contact-btn span {
+  font-size: 17px;
+
+  transition: transform 0.3s ease;
+}
+
+.footer-contact-btn:hover {
+  background: var(--gold);
+
+  color: #080808;
+
+  border-color: var(--gold);
+}
+
+.footer-contact-btn:hover span {
+  transform: translate(3px, -3px);
+}
+
+
+/* =========================================
+   WATERMARK
+========================================= */
+
+.footer-watermark {
+  position: relative;
+
+  height: 150px;
+
+  display: flex;
+
+  align-items: flex-end;
+
+  justify-content: center;
+
+  overflow: hidden;
+
+  margin-top: -10px;
+
+  pointer-events: none;
+}
+
+.footer-watermark span {
+  font-family: var(--heading-font);
+
+  font-size: clamp(130px, 19vw, 270px);
+
+  font-weight: 600;
+
+  line-height: 0.62;
+
+  letter-spacing: 10px;
+
+  color: transparent;
+
+  -webkit-text-stroke: 1px rgba(201, 162, 39, 0.12);
+
+  white-space: nowrap;
+}
+
+
+/* =========================================
+   BOTTOM
+========================================= */
+
+.footer-bottom {
+  position: relative;
+
+  z-index: 3;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+
+  background: #060606;
+}
+
+.footer-bottom-container {
+  width: min(1200px, calc(100% - 70px));
+
+  min-height: 65px;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: 1fr auto 1fr;
+
+  align-items: center;
+
+  gap: 20px;
+}
+
+.footer-bottom p {
+  color: #55524d;
+
+  font-size: 8px;
+}
+
+.footer-bottom p span {
+  color: #9b968e;
+}
+
+.footer-bottom-links {
+  display: flex;
+
+  gap: 25px;
+}
+
+.footer-bottom-links a {
+  color: #55524d;
+
+  font-size: 8px;
+
+  transition: color 0.3s ease;
+}
+
+.footer-bottom-links a:hover {
+  color: var(--gold);
+}
+
+.footer-made {
+  justify-self: end;
+
+  color: #4e4b46;
+
+  font-size: 8px;
+}
+
+.footer-made span {
+  color: var(--gold);
+
+  margin-left: 4px;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1050px) {
+
+  .footer-container {
+    grid-template-columns:
+      1.4fr
+      1fr
+      1fr;
+
+    gap: 45px;
+  }
+
+  .footer-brand {
+    grid-column: span 3;
+
+    max-width: 600px;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 700px) {
+
+  .footer-main {
+    padding: 70px 0 30px;
+  }
+
+  .footer-container {
+    width: calc(100% - 40px);
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 45px 25px;
+  }
+
+  .footer-brand {
+    grid-column: span 2;
+  }
+
+  .footer-column {
+    min-width: 0;
+  }
+
+  .footer-column h3 {
+    font-size: 21px;
+  }
+
+  .footer-watermark {
+    height: 100px;
+
+    margin-top: 15px;
+  }
+
+  .footer-watermark span {
+    font-size: 95px;
+
+    letter-spacing: 5px;
+  }
+
+  .footer-bottom-container {
+    width: calc(100% - 40px);
+
+    grid-template-columns: 1fr;
+
+    padding: 20px 0;
+
+    text-align: center;
+  }
+
+  .footer-bottom-links {
+    justify-content: center;
+  }
+
+  .footer-made {
+    justify-self: center;
+  }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 430px) {
+
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-brand {
+    grid-column: span 1;
+  }
+
+  .footer-logo-main {
+    font-size: 46px;
+  }
+
+  .footer-watermark span {
+    font-size: 75px;
+  }
+
+  .footer-bottom-links {
+    flex-direction: column;
+
+    gap: 8px;
+  }
+
+}

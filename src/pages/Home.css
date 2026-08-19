@@ -1,0 +1,602 @@
+/* =========================
+   HOME PAGE
+========================= */
+
+.home-page {
+  background: var(--black);
+  overflow: hidden;
+}
+
+/* =========================
+   INTRO SECTION
+========================= */
+
+.home-intro {
+  position: relative;
+  background: var(--black);
+}
+
+.home-intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 90px;
+  align-items: center;
+}
+
+.home-small-title {
+  display: inline-block;
+
+  color: var(--gold);
+
+  font-size: 10px;
+  font-weight: 600;
+
+  letter-spacing: 4px;
+
+  text-transform: uppercase;
+}
+
+.home-intro-heading h2 {
+  max-width: 600px;
+
+  margin-top: 18px;
+
+  font-family: var(--heading-font);
+
+  font-size: clamp(48px, 5vw, 72px);
+
+  font-weight: 500;
+
+  line-height: 0.95;
+}
+
+.home-intro-heading h2 span {
+  display: block;
+  color: var(--gold);
+}
+
+.home-intro-text {
+  max-width: 560px;
+}
+
+.home-intro-text p {
+  color: var(--muted);
+
+  font-size: 14px;
+
+  line-height: 1.9;
+
+  margin-bottom: 20px;
+}
+
+.text-link {
+  display: inline-flex;
+
+  align-items: center;
+
+  gap: 12px;
+
+  margin-top: 8px;
+
+  color: var(--gold);
+
+  font-size: 11px;
+
+  font-weight: 600;
+
+  letter-spacing: 1.5px;
+
+  text-transform: uppercase;
+
+  transition: 0.3s ease;
+}
+
+.text-link span {
+  font-size: 20px;
+
+  transition: transform 0.3s ease;
+}
+
+.text-link:hover {
+  color: var(--gold-light);
+}
+
+.text-link:hover span {
+  transform: translateX(6px);
+}
+
+/* =========================
+   DESTINATIONS
+========================= */
+
+.home-destinations {
+  position: relative;
+}
+
+.destinations-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 18px;
+}
+
+.center-btn {
+  display: flex;
+
+  justify-content: center;
+
+  margin-top: 50px;
+}
+
+/* =========================
+   PACKAGES
+========================= */
+
+.home-packages {
+  background:
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(201, 162, 39, 0.06),
+      transparent 30%
+    ),
+    var(--black);
+}
+
+.packages-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 22px;
+}
+
+/* =========================
+   EXPERIENCES
+========================= */
+
+.home-experiences {
+  background:
+    linear-gradient(
+      135deg,
+      #111111,
+      #0c0c0c
+    );
+}
+
+.experiences-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 22px;
+}
+
+/* =========================
+   WHY AVYORA
+========================= */
+
+.why-avyora {
+  background: var(--black);
+}
+
+.why-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 90px;
+
+  align-items: center;
+}
+
+/* =========================
+   WHY IMAGE
+========================= */
+
+.why-image {
+  position: relative;
+
+  height: 650px;
+
+  overflow: hidden;
+}
+
+.why-image::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.65),
+      transparent 50%
+    );
+
+  pointer-events: none;
+}
+
+.why-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition: transform 0.8s ease;
+}
+
+.why-image:hover img {
+  transform: scale(1.05);
+}
+
+/* =========================
+   BADGE
+========================= */
+
+.why-image-badge {
+  position: absolute;
+
+  right: 25px;
+  bottom: 25px;
+
+  z-index: 2;
+
+  width: 125px;
+  height: 125px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  background: rgba(9, 9, 9, 0.9);
+
+  border: 1px solid var(--gold);
+
+  text-align: center;
+}
+
+.why-image-badge strong {
+  color: var(--gold);
+
+  font-family: var(--heading-font);
+
+  font-size: 36px;
+
+  line-height: 1;
+}
+
+.why-image-badge span {
+  color: var(--white);
+
+  font-size: 9px;
+
+  text-transform: uppercase;
+
+  letter-spacing: 1px;
+
+  margin-top: 4px;
+}
+
+.why-image-badge small {
+  color: var(--muted);
+
+  font-size: 8px;
+
+  margin-top: 3px;
+}
+
+/* =========================
+   WHY CONTENT
+========================= */
+
+.why-content h2 {
+  max-width: 550px;
+
+  margin-top: 17px;
+
+  font-family: var(--heading-font);
+
+  font-size: clamp(48px, 5vw, 70px);
+
+  font-weight: 500;
+
+  line-height: 0.95;
+}
+
+.why-content h2 span {
+  display: block;
+
+  color: var(--gold);
+}
+
+.why-intro {
+  max-width: 520px;
+
+  color: var(--muted);
+
+  font-size: 14px;
+
+  line-height: 1.9;
+
+  margin-top: 25px;
+}
+
+/* =========================
+   WHY LIST
+========================= */
+
+.why-list {
+  margin: 35px 0;
+}
+
+.why-item {
+  display: grid;
+
+  grid-template-columns: 45px 1fr;
+
+  gap: 15px;
+
+  padding: 20px 0;
+
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.why-item:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.why-number {
+  color: var(--gold);
+
+  font-family: var(--heading-font);
+
+  font-size: 22px;
+}
+
+.why-item h3 {
+  color: var(--white);
+
+  font-family: var(--heading-font);
+
+  font-size: 24px;
+
+  font-weight: 600;
+
+  margin-bottom: 4px;
+}
+
+.why-item p {
+  color: var(--muted);
+
+  font-size: 11px;
+
+  line-height: 1.7;
+}
+
+/* =========================
+   LUXURY CTA
+========================= */
+
+.home-luxury {
+  position: relative;
+
+  min-height: 650px;
+
+  display: flex;
+
+  align-items: center;
+
+  background-image:
+    url("https://images.unsplash.com/photo-1539650116574-75c0c6d73f6e");
+
+  background-size: cover;
+
+  background-position: center;
+}
+
+.home-luxury-overlay {
+  position: absolute;
+
+  inset: 0;
+
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0, 0, 0, 0.92),
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0.75)
+    );
+}
+
+.home-luxury .container {
+  position: relative;
+
+  z-index: 2;
+}
+
+.home-luxury-content {
+  max-width: 700px;
+}
+
+.home-luxury-content > span {
+  color: var(--gold);
+
+  font-size: 10px;
+
+  font-weight: 600;
+
+  letter-spacing: 4px;
+}
+
+.home-luxury-content h2 {
+  margin-top: 18px;
+
+  font-family: var(--heading-font);
+
+  font-size: clamp(55px, 7vw, 95px);
+
+  font-weight: 500;
+
+  line-height: 0.85;
+}
+
+.home-luxury-content h2 strong {
+  display: block;
+
+  color: var(--gold);
+
+  font-weight: 600;
+
+  margin-top: 12px;
+}
+
+.home-luxury-content p {
+  max-width: 570px;
+
+  color: #cfc8bd;
+
+  font-size: 14px;
+
+  line-height: 1.9;
+
+  margin-top: 30px;
+}
+
+.home-luxury-buttons {
+  display: flex;
+
+  gap: 15px;
+
+  margin-top: 35px;
+}
+
+/* =========================
+   LARGE TABLET
+========================= */
+
+@media (max-width: 1100px) {
+
+  .destinations-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .packages-grid,
+  .experiences-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-grid {
+    gap: 50px;
+  }
+
+  .why-image {
+    height: 580px;
+  }
+}
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 800px) {
+
+  .home-intro-grid {
+    grid-template-columns: 1fr;
+
+    gap: 35px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+
+    gap: 55px;
+  }
+
+  .why-image {
+    height: 600px;
+  }
+
+  .why-content {
+    max-width: 650px;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .destinations-grid,
+  .packages-grid,
+  .experiences-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-intro {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+
+  .home-intro-heading h2 {
+    font-size: 48px;
+  }
+
+  .why-image {
+    height: 500px;
+  }
+
+  .why-content h2 {
+    font-size: 50px;
+  }
+
+  .why-item {
+    grid-template-columns: 38px 1fr;
+  }
+
+  .home-luxury {
+    min-height: 600px;
+
+    background-position: 60% center;
+  }
+
+  .home-luxury-content h2 {
+    font-size: 58px;
+  }
+
+  .home-luxury-buttons {
+    flex-direction: column;
+
+    align-items: stretch;
+
+    max-width: 220px;
+  }
+}
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 400px) {
+
+  .home-intro-heading h2 {
+    font-size: 43px;
+  }
+
+  .why-image {
+    height: 430px;
+  }
+
+  .why-content h2 {
+    font-size: 44px;
+  }
+
+  .home-luxury-content h2 {
+    font-size: 50px;
+  }
+}
